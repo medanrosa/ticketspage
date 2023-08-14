@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="stylesheets/ticketspg.css">
+  
+</head>
+
+<body>
+  <header>
+
+    <section class="top-nav">
+
+      <img src="images/new logo.png" alt="logo" id="logo">
+
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a href="page4.html">HOME</a></li>
+        <li><a href="ticketspg.html">Tickets</a></li>
+        <li><a href="detailspg.html">Details</a></li>
+        <li><a href="paymentpg.html">Payment</a></li>
+        <li><a href="confirmationpg.html">Confirmation</a></li>
+      </ul>
+    </section>
+
+    <div class="headernav">
+      <h1>Payment</h1>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="page4.html">HOME</a></li>
+        <li><a href="ticketspg.html">Tickets</a></li>
+        <li><a href="detailspg.html">Details</a></li>
+        <li><a href="paymentpg.html">Payment</a></li>
+        <li><a href="confirmationpg.html">Confirmation</a></li>
+      </ul>
+      </div>
+  </header>
+
+  <main>
+    <div class="container-sumtable">
+      <table>
+        <tr>
+          <th>Description</th>
+          <th>Details</th>
+        </tr>
+        <tr>
+          <td>Date</td>
+          <td id="cdate"></td>
+        </tr>
+        <tr>
+          <td>Time</td>
+          <td id="ctime"></td>
+        </tr>
+        <tr>
+          <td>Duration</td>
+          <td id="cdura"></td>
+        </tr>
+        <tr>
+          <td>Tickets</td>
+          <td>Charges</td>
+        </tr>
+        <tr>
+          <td>Foreigner Adult </td>
+          <td id="fa"></td>
+        </tr>
+        <tr>
+          <td>Foreigner Child </td>
+          <td id="fc"></td>
+        </tr>
+
+        <tr>
+          <td>Local Adult </td>
+          <td id="la"></td>
+        </tr>
+
+        <tr>
+          <td>Local Child </td>
+          <td id="lc"></td>
+        </tr>
+
+        <tr>
+          <td>Infant </td>
+          <td>Free</td>
+        </tr>
+
+        <tr>
+          <td>Total</td>
+          <td id="ctotal"></td>
+        </tr>
+      </table>
+    </div>
+
+    <fieldset>
+    <div class="para-container-payment">
+
+      <div class="form-row">
+        <label for="fYyIJxtzhzahkHk">
+          Card number
+          <span class="tooltip-trigger cvv-tooltip"></span>
+
+        </label>
+        <input type="text" name="fYyIJxtzhzahkHk" class="cc-number" id="fYyIJxtzhzahkHk" size="21" value=""
+          autocomplete="off" required maxlength="5" />
+      </div>
+      <div class="form-row expiry-date-row">
+        <label for="expdatemonth">Expiry date</label>
+        <div class="expiry-group">
+          <select name="expdatemonth" id="expdatemonth" class="make-it-fancy">
+            <option value="Month">Month</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <span class="slash">/</span>
+          <select name="expdateyear" id="expdateyear" class="make-it-fancy">
+            <option value="Year">Year</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="VwbYqnxAFZerOOXH">
+          CVC/CVV
+          <span class="tooltip-trigger"></span>
+
+      </div>
+      </label>
+      <input type="text" name="VwbYqnxAFZerOOXH" id="VwbYqnxAFZerOOXH" size="4" class="cvv" maxlength="4"
+        autocomplete="off" required />
+
+      <br>
+
+      <button class="submit" type="submit"><a href="confirmationpg.html"> Place order</a> </button>
+    </div>
+    </div>
+  </fieldset>
+
+ 
+  </main>
+  <script src="ticketspg.js"></script>
+  <script>getinfo();
+  get();</script>
+</body>
+
+</html>

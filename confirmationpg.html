@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="stylesheets/ticketspg.css">
+  
+</head>
+
+<body>
+  <header>
+
+    <section class="top-nav">
+
+      <img src="images/new logo.png" alt="logo" id="logo">
+
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a href="page4.html">HOME</a></li>
+        <li><a href="ticketspg.html">Tickets</a></li>
+        <li><a href="detailspg.html">Details</a></li>
+        <li><a href="paymentpg.html">Payment</a></li>
+        <li><a href="confirmationpg.html">Confirmation</a></li>
+      </ul>
+    </section>
+
+    <div class="headernav">
+      <h1>Confirmation</h1>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="page4.html">HOME</a></li>
+        <li><a href="ticketspg.html">Tickets</a></li>
+        <li><a href="detailspg.html">Details</a></li>
+        <li><a href="paymentpg.html">Payment</a></li>
+        <li><a href="confirmationpg.html">Confirmation</a></li>
+      </ul>
+      </div>
+  </header>
+  <main>
+
+    <div class="para-container-confirmation">
+      <table id="confirmpgsumtbl" class="designsum">
+        <tr>
+          <th>Description</th>
+          <th>Details</th>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td id="cname"></td>
+        </tr>
+        <tr>
+          <td>Date</td>
+          <td id="cdate"></td>
+        </tr>
+        <tr>
+          <td>Time</td>
+          <td id="ctime"></td>
+        </tr>
+        <tr>
+          <td>Duration</td>
+          <td id="cdura"></td>
+        </tr>
+        <tr>
+          <td>Mobile</td>
+          <td id="cmob"></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td id="cemail"></td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td id="cgender"></td>
+        </tr>
+        <tr>
+          <td>Tickets</td>
+          <td>Charges</td>
+        </tr>
+        <tr>
+          <td>Foreigner Adult </td>
+          <td id="fa"></td>
+        </tr>
+        <tr>
+          <td>Foreigner Child </td>
+          <td id="fc"></td>
+        </tr>
+
+        <tr>
+          <td>Local Adult </td>
+          <td id="la"></td>
+        </tr>
+
+        <tr>
+          <td>Local Child </td>
+          <td id="lc"></td>
+        </tr>
+
+        <tr>
+          <td>Infant </td>
+          <td>Free</td>
+        </tr>
+
+        <tr>
+          <td>Total</td>
+          <td id="ctotal"></td>
+        </tr>
+      </table>
+    </div>
+
+  </main>
+  <script src="ticketspg.js"></script>
+  <script>
+  getinfo();
+  final();
+  get();
+  </script>
+</body>
+
+</html>

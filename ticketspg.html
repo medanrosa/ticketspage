@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="stylesheets/ticketspg.css">
+
+</head>
+
+<body>
+  <header>
+    <section class="top-nav">
+
+      <img src="images/new logo.png" alt="logo" id="logo">
+
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a href="page4.html">HOME</a></li>
+        <li><a href="ticketspg.html">Tickets</a></li>
+        <li><a href="detailspg.html">Details</a></li>
+        <li><a href="paymentpg.html">Payment</a></li>
+        <li><a href="confirmationpg.html">Confirmation</a></li>
+      </ul>
+    </section>
+
+    <div class="headernav">
+      <h1>Buy Tickets</h1>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="page4.html">HOME</a></li>
+        <li><a href="ticketspg.html">Tickets</a></li>
+        <li><a href="detailspg.html">Details</a></li>
+        <li><a href="paymentpg.html">Payment</a></li>
+        <li><a href="confirmationpg.html">Confirmation</a></li>
+      </ul>
+    </div>
+
+
+  </header>
+
+  <main>
+
+    <div class="container-sumtable">
+      <table>
+        <tr>
+          <th>Description</th>
+          <th>Details</th>
+        </tr>
+        <tr>
+          <td>Date</td>
+          <td id="cdate"></td>
+        </tr>
+        <tr>
+          <td>Time</td>
+          <td id="ctime"></td>
+        </tr>
+        <tr>
+          <td>Duration</td>
+          <td id="cdura"></td>
+        </tr>
+        <tr>
+          <td>Tickets</td>
+          <td>Charges</td>
+        </tr>
+        <tr>
+          <td>Foreigner Adult </td>
+          <td id="fa"></td>
+        </tr>
+        <tr>
+          <td>Foreigner Child </td>
+          <td id="fc"></td>
+        </tr>
+
+        <tr>
+          <td>Local Adult </td>
+          <td id="la"></td>
+        </tr>
+
+        <tr>
+          <td>Local Child </td>
+          <td id="lc"></td>
+        </tr>
+
+        <tr>
+          <td>Infant </td>
+          <td>Free</td>
+        </tr>
+
+        <tr>
+          <td>Total</td>
+          <td id="ctotal"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="para-container">
+      <h2>Dates</h2>
+      <p>pick a date that suits you</p>
+    </div>
+
+
+    <!-- calander -->
+    <div class="container-calendar">
+
+      <div class="button-container-calendar">
+        <button id="previous">&#8249;</button>
+        <button id="next">&#8250;</button>
+        <h3 id="monthHeader"></h3>
+        <p id="yearHeader"></p>
+      </div>
+
+      <table class="table-calendar" id="calendar">
+        <thead id="thead-month"></thead>
+        <tbody id="calendar-body"></tbody>
+      </table>
+
+      <div class="footer-container-calendar">
+        <label for="month">Jump To: </label>
+        <select id="month">
+          <option value=0>Jan</option>
+          <option value=1>Feb</option>
+          <option value=2>Mar</option>
+          <option value=3>Apr</option>
+          <option value=4>May</option>
+          <option value=5>Jun</option>
+          <option value=6>Jul</option>
+          <option value=7>Aug</option>
+          <option value=8>Sep</option>
+          <option value=9>Oct</option>
+          <option value=10>Nov</option>
+          <option value=11>Dec</option>
+        </select>
+        <select id="year"></select>
+      </div>
+      <p id="date-picked"></p>
+
+    </div>
+
+    <div class="para-container">
+      <h2>Guests</h2>
+      <p>make the reserevations as you wish</p>
+    </div>
+
+
+
+    <div class="shopping-cart">
+      <!-- Title -->
+      <div class="title">
+        <h2>Guest</h2>
+        <h5>🗲Likely to sell out</h5>
+      </div>
+
+      <!-- Product #1 -->
+      <div class="item">
+        <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="description">
+          <span>
+            <h3>Adult (Local)</h3>
+          </span>
+          <br>
+          <span>above 15 yrs</span>
+        </div>
+
+        <div class="wrapper">
+          <span class="minus">-</span>
+          <span class="num">00</span>
+          <span class="plus">+</span>
+        </div>
+      </div>
+
+      <!-- Product #2 -->
+      <div class="item">
+        <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="description">
+          <span>
+            <h3>Child (Local)</h3>
+          </span>
+          <br>
+          <span>5 to 14 yrs</span>
+        </div>
+
+        <div class="wrapper1">
+          <span class="minus1">-</span>
+          <span class="num1">00</span>
+          <span class="plus1">+</span>
+        </div>
+      </div>
+
+      <!-- Product #3 -->
+      <div class="item">
+        <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="description">
+          <span>
+            <h3>Infant</h3>
+          </span>
+          <br>
+          <span>under 4 years</span>
+        </div>
+
+        <div class="wrapper2">
+          <span class="minus2">-</span>
+          <span class="num2">00</span>
+          <span class="plus2">+</span>
+        </div>
+      </div>
+
+      <!-- Product #4 -->
+      <div class="item">
+        <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="description">
+          <span>
+            <h3>Adult (Foreign)</h3>
+          </span>
+          <br>
+          <span>over 15 years</span>
+        </div>
+
+        <div class="wrapper3">
+          <span class="minus3">-</span>
+          <span class="num3">00</span>
+          <span class="plus3">+</span>
+        </div>
+      </div>
+
+      <!-- Product #5 -->
+      <div class="item">
+        <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="description">
+          <span>
+            <h3>Child (Foreign)</h3>
+          </span>
+          <br>
+          <span>5 to 14 yrs</span>
+        </div>
+
+        <div class="wrapper4">
+          <span class="minus4">-</span>
+          <span class="num4">00</span>
+          <span class="plus4">+</span>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="para-container">
+      <h2>Duration</h2>
+
+      <p>Select a time for your visit</p>
+    </div>
+    <!-- <fieldset>
+          <input type="checkbox" id="ch1">07.00 am - 08.00 am<br>
+          <input type="checkbox" id="ch2">08.00 am - 09.00 am<br>
+          <input type="checkbox" id="ch3">09.00 am - 10.00 am<br>
+          <input type="checkbox" id="ch4">10.00 pm - 11.00 pm (peak hours) <br>
+          <input type="checkbox" id="ch5">11.00 am - 12.00 am (peak hours)<br>
+          <input type="checkbox" id="ch6">12.00 am - 1.00 am (peak hours)<br>
+          <input type="checkbox" id="ch7">1.00 am - 2.00 am<br>
+          <input type="checkbox" id="ch8">2.00 pm - 3.00 pm <br>
+          <input type="checkbox" id="ch9">3.00 pm - 4.00 pm (peak hours)<br>
+          <input type="checkbox" id="ch10">4.00 pm - 5.00 pm (peak hours)<br>
+          <input type="checkbox" id="ch11">5.00 pm - 6.00 pm (peak hours)<br>
+      </fieldset> -->
+
+    <fieldset id="timeslot">
+      <input type="checkbox" id="ch1" onchange="updateHours('ch1')">07.00 am - 08.00 am
+      <input type="checkbox" id="ch2" onchange="updateHours('ch2')">08.00 am - 09.00 am
+      <input type="checkbox" id="ch3" onchange="updateHours('ch3')">09.00 am - 10.00 am
+      <input type="checkbox" id="ch4" onchange="updateHours('ch4')">10.00 pm - 11.00 pm (peak hours)
+      <input type="checkbox" id="ch5" onchange="updateHours('ch5')">11.00 am - 12.00 am (peak hours)
+      <input type="checkbox" id="ch6" onchange="updateHours('ch6')">12.00 am - 1.00 am (peak hours)
+      <input type="checkbox" id="ch7" onchange="updateHours('ch7')">1.00 am - 2.00 am
+      <input type="checkbox" id="ch8" onchange="updateHours('ch8')">2.00 pm - 3.00 pm
+      <input type="checkbox" id="ch9" onchange="updateHours('ch9')">3.00 pm - 4.00 pm (peak hours)
+      <input type="checkbox" id="ch10" onchange="updateHours('ch10')">4.00 pm - 5.00 pm (peak hours)
+      <input type="checkbox" id="ch11" onchange="updateHours('ch11')">5.00 pm - 6.00 pm (peak hours)
+      <button class="submit" type="submit"><a href="detailspg.html">
+          <p>next page</p>
+        </a> </button>
+    </fieldset>
+
+
+  </main>
+  <script src="ticketspg.js"></script>
+  <script>getinfo();
+    get();
+  /* test(); */
+  </script>
+
+</body>
+
+</html>
